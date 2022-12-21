@@ -1,77 +1,64 @@
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color:grey;
+body {
+  background-color: grey;
 }
-.container
-{
-width:520px;
-height:520px;
-top:190px; 
-left:590px; 
-border:58px solid white;
-/*:auto;
-margin-top:170px;*/ 
-transform:rotate(45deg);
-position:relative;
-
+.container {
+  width: 520px;
+  height: 520px;
+  top: 190px;
+  left: 590px;
+  border: 58px solid white;
+  /*:auto;
+margin-top:170px;*/
+  transform: rotate(45deg);
+  position: relative;
 }
-.container .content
-{
-    position:absolute;
-    transform:rotate(-45deg);
-    margin-top:34.5%;
-    margin-left:6%;
-    /* margin:auto; */
-    
+.container .content {
+  position: absolute;
+  transform: rotate(-45deg);
+  margin-top: 34.5%;
+  margin-left: 6%;
+  /* margin:auto; */
 }
-.container .border1
-{
-    width:520px;
-    height:520px;
-    border-bottom:58px solid skyblue;
-    z-index:2;
-    position:absolute;
-    top:-58.5px;
-    left: -58px;
-
-
-    
+.container .border1 {
+  width: 520px;
+  height: 520px;
+  border-bottom: 58px solid skyblue;
+  z-index: 2;
+  position: absolute;
+  top: -58.5px;
+  left: -58px;
 }
-.container .border2
-{
-    width:520px;
-    height:520px;
-    border-top :58px solid yellow;
-    position:absolute;
-    z-index:2;
-    top:-14.4%;
-    left:-14.4%;
+.container .border2 {
+  width: 520px;
+  height: 520px;
+  border-top: 58px solid yellow;
+  position: absolute;
+  z-index: 2;
+  top: -14.4%;
+  left: -14.4%;
 }
 
-.container .content h3{
-
-    font-size:57px;
-    color:white;
+.container .content h3 {
+  font-size: 57px;
+  color: white;
 }
-.container .content p{
-   
-    font-size:28px;
-    color:white;
-    margin-left:7.8%;
+.container .content p {
+  font-size: 28px;
+  color: white;
+  margin-left: 7.8%;
 }
-.container .content span{
-    color:orange;
+.container .content span {
+  color: orange;
 }
-.footer
-{
-    position:absolute;
-    font-size:40px;
-    color:white;
-    margin-top:18%;
-    margin-left:39%;
+.footer {
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  margin-top: 18%;
+  margin-left: 39%;
 }
