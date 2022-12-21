@@ -1,0 +1,175 @@
+*{
+    margin:5px;
+    padding:0;
+    box-sizing:border-box;
+    /*display:none;*/
+}
+.page
+{
+    border:1px solid black;
+   /*width:800px;*/
+    margin:auto;
+    height:885px;
+}
+/*HEADER CSS START*/
+header{
+    margin:10px;
+    border:1px solid black;
+}
+header h3{
+    text-align:center;
+    font-size:40px;
+    font-weight:600;
+}
+header .headcontent
+{
+    display: flex;
+
+}
+header .headcontent img{
+    width:280px;
+    height:165px;
+    border:1px solid black;
+    margin:30px;
+    margin-left:70px;
+
+}
+header .headcontent p {
+    font-size:50px;
+    margin:auto;
+    font-weight: 100;
+    
+}
+/* HEADER CSS ENDS*/
+/* CONTAINER CSS START */
+.container
+{
+    margin:10px;
+    margin-top:0;
+    border:1px solid black;
+
+}
+.container h3{
+    text-align:center;
+    font-size:25px;
+
+}
+.container .cards
+{
+    display:flex;
+    flex-wrap:wrap;
+    padding-left:10px;
+}
+.container .card1,
+.container .card2,
+.container .card3,
+.container .card4,
+.container .card5,
+.container .card6
+{
+    text-align:center;
+    border:1px solid black;
+    margin:10px;
+    width:31.7%;
+    padding:10px;
+    height:205px;
+    font-size:25px;
+}
+    /*CONTAINER CSS ENDS*/
+    /*FOOTER CSS STARTS*/
+footer{
+    margin:10px;
+    margin-top:0;
+    border:1px solid black;
+    height:50px;
+    font-size:20px;
+
+}
+footer h3{
+    text-align:center
+    
+}
+/*Footer css ends*/
+
+/* MEDIA QUERY CSS START */
+
+@media only screen and (max-width: 1000px) {
+    header .headcontent p {
+        font-size: 30px;
+    }
+
+    .container .card1,
+    .container .card2,
+    .container .card3,
+    .container .card4,
+    .container .card5,
+    .container .card6 {
+        width: 300px;
+        /* height: 100%; */
+        height: 200px;
+        margin:15px;
+    }
+    .page{
+        height:1110px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header .headcontent p {
+        font-size: 30px;
+    }
+    .container .card1,
+    .container .card2,
+    .container .card3,
+    .container .card4,
+    .container .card5,
+    .container .card6 {
+        width: 300px;
+        height: 200px;
+    }
+    .page{
+        height:1750px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header .headcontent img {
+        width: 100px;
+        height: 100px;
+        margin-left:-0%;
+    }
+    .page{
+        height:1890px;
+        width:220px
+        
+    }
+    header .headcontent p
+    {
+        font-size:18px;
+       margin-left:-13%;
+    }
+    .container .card1,
+    .container .card2,
+    .container .card3,
+    .container .card4,
+    .container .card5,
+    .container .card6 {
+                 width:880px;
+                  height:350px;
+    }
+}
+@media only screen and (max-width:1285) and (min-width:1000)
+{
+    .page{
+        height:1850px;
+    }
+}
+@media only screen and(max-width:667) and (max-height:375)
+{
+    .page{
+        height:990px;
+    }
+}
+
+
+/* MEDIA QUERY CSS END */
