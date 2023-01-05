@@ -74,9 +74,17 @@ header nav .nav ul li a {
     color: var(--color-light);
     height: 22px;
     font-size: 16px;
-    font-weight: 500;
+    /* font-weight: 500; */
     letter-spacing: 0;
-    line-height: 22px;
+    /* line-height: 22px; */
+    font-family: 'Poppins';
+    font-weight: 500px;
+    font-size: 20px;
+    line-height: 26px;
+
+
+
+
 }
 
 header nav .nav ul .social {
@@ -94,13 +102,25 @@ header nav .nav ul .social {
 .banner .content {
     display: flex;
     justify-content: space-around;
-    align-items:center
+    align-items: center
+}
+
+.banner .content .banner-text {
+    font-family: 'Poppins';
+    font-weight: 700px;
+    font-size: 58px;
+    line-height: 70px;
+
 }
 
 .banner .content .banner-text span {
     background: -webkit-linear-gradient(right, #13B0F5, #E70FAA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: 'Poppins';
+    font-weight: 700px;
+    font-size: 58px;
+    line-height: 70px;
 }
 
 .banner .content img {
@@ -187,98 +207,280 @@ hr {
 
 .bot-nav {
     display: flex;
-     justify-content: space-around; 
+    justify-content: space-around;
 }
 
 .bot-nav ul {
     display: flex;
 }
-.bot-nav ul li{
+
+.bot-nav ul li {
     margin-right: 20px;
 }
-.bot-nav ul li:last-child{
+
+.bot-nav ul li:last-child {
     margin-right: 0;
 }
 
 .bot-nav ul li a {
     color: var(--border-color-light);
+    font-family: 'Poppins';
+    font-weight: 500px;
+    font-size: 20px;
+    line-height: 26px;
+
 }
 
 .bot-nav p span {
     background: -webkit-linear-gradient(right, #13B0F5, #E70FAA);
-    -webkit-background-clip : text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: 'Poppins';
+    font-weight: 500px;
+    font-size: 20px;
+    line-height: 26px;
+
 }
 
-.divider{
+.bot-nav p {
+    font-family: 'Poppins';
+    font-weight: 500px;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.divider {
     border: 1px solid white;
-    
+
     text-align: center;
 }
-.card-body
-{
+
+.card-body {
     background: #363636;
-box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px  20px 20px;
+    box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 20px 20px;
 }
-.card-img-top
-{
-    border-radius:20px 20px 0px 0px;
+
+.card-img-top {
+    border-radius: 20px 20px 0px 0px;
 }
-.col
-{
+
+.col {
     background-color: #000000;
-    border-radius:1 px solid black;
+    border-radius: 1 px solid black;
 }
-.card{
-    border-radius:30px;
-    
-}
-.card-icon
-{
-    background-color: #000000;
-}
-@media only screen and (max-width: 1140px) {
-    .banner .content .img
-    {
-       width:180px;
-       height:180px;
-    }
-    .card-icon{
-        text-align:center;
-        justify-content:center;
-    }
+
+.card {
+    border-radius: 30px;
 
 }
+
+.card-icon {
+    background-color: #000000;
+}
+
+.tech-stack .stack h3 {
+    font-family: 'Poppins';
+    font-weight: 700px;
+    font-size: 48px;
+    line-height: 26px;
+
+}
+
+.tech-stack .stack p {
+    font-family: 'Poppins';
+    font-weight: 400px;
+    font-size: 32px;
+    line-height: 26px;
+    margin-top: 24px;
+
+}
+
+.project h3 {
+    font-family: 'Poppins';
+    font-weight: 700px;
+    font-size: 48px;
+    line-height: 26px;
+
+}
+
+.project p {
+    font-family: 'Poppins';
+    font-weight: 400px;
+    font-size: 32px;
+    line-height: 26px;
+    margin-top: 24px;
+
+}
+
 @media only screen and (max-width: 1140px) {
-    .banner .content .img
-    {
-       width:110px;
-       height:110px;
+    .banner .content .img {
+        width: 180px;
+        height: 180px;
     }
-    .card-icon{
-        text-align:center;
-        justify-content:center;
+
+    .card-icon {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .banner .content .banner-text {
+
+        font-size: 40px;
+        line-height: 54px;
+
 
     }
-    .bot-nav{
+
+    .banner .content .banner-text span {
+        font-size: 40px;
+        line-height: 54px;
+
+    }
+
+    .tech-stack .stack h3 {
+
+        font-size: 38px;
+        line-height: 19px;
+
+    }
+
+    .tech-stack .stack p {
+
+        font-size: 24px;
+        line-height: 19px;
+        margin-top: 24px;
+
+    }
+
+    header .logo img {
+        width: 80px;
+        height: 42px;
+    }
+
+    header nav .nav ul li a {
+
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    header nav .nav ul .social {
+        width: 20px;
+        height: 20px;
+    }
+
+    .linkedin {
+        width: 20px;
+        height: 20px;
+    }
+
+    .bot-nav p span {
+
+        font-size: 15px;
+        line-height: 20px;
+
+    }
+
+    .bot-nav p {
+
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .banner .content .img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .card-icon {
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .bot-nav {
         flex-direction: column;
-        justify-content:center;
-        align-items:center;
-        width:100%;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
+
+    .banner .content .banner-text {
+
+        font-size: 25px;
+        line-height: 38px;
+
+
+    }
+
+    .banner .content .banner-text span {
+        font-size: 25px;
+        line-height: 38px;
+
+    }
+
+    
+
+    .tech-stack .stack h3 {
+
+        font-size: 19px;
+        line-height: 28px;
+
+    }
+
+    .tech-stack .stack p {
+
+        font-size: 19px;
+        line-height: 28px;
+        margin-top: 24px;
+
+    }
+
 }
-    @media only screen and (max-width: 440px)
-    {
-        .bot-nav ul li a 
-        {
-            font-size:8px;
-        }
-        .bot-nav ul li p {
 
-            font-size:10px;
-        };
+@media only screen and (max-width: 440px) {
+    .bot-nav ul li a {
+        font-size: 8px;
     }
 
+    .bot-nav ul li p {
 
+        font-size: 10px;
+    }
 
+    .linkedin {
+        display: none;
+    }
+
+    header .logo img {
+        width: 60px;
+        height: 32px;
+    }
+
+    header nav .nav ul li a {
+
+        font-size: 9px;
+        line-height: 12px;
+    }
+
+    header nav .nav ul .social {
+        width: 12px;
+        height: 12px;
+    }
+
+    .bot-nav p span {
+
+        font-size: 12px;
+        line-height: 15px;
+
+    }
+
+    .bot-nav p {
+
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+}
