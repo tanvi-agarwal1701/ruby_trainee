@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/font');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +10,6 @@ body {
     background-color: #000000;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
 
 /*Root*/
 :root {
@@ -153,7 +154,15 @@ header nav .nav ul .social {
 }
 
 .project {
-    margin-top: 20px;
+    margin-top: 178px;
+}
+
+.project p {
+    margin-bottom: 97px;
+}
+
+.stack {
+    margin-bottom: 97px;
 }
 
 /* Footer CSS Start */
@@ -207,7 +216,7 @@ hr {
 
 .bot-nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .bot-nav ul {
@@ -292,8 +301,13 @@ hr {
     font-weight: 400px;
     font-size: 32px;
     line-height: 26px;
-    margin-top: 24px;
+    margin-top: 40px;
 
+}
+
+.marks {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .project h3 {
@@ -308,8 +322,8 @@ hr {
     font-family: 'Poppins';
     font-weight: 400px;
     font-size: 32px;
-    line-height: 26px;
-    margin-top: 24px;
+    line-height: 36px;
+    margin-top: 40px;
 
 }
 
@@ -386,6 +400,11 @@ hr {
         font-size: 15px;
         line-height: 20px;
     }
+
+    .marks {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -421,7 +440,7 @@ hr {
 
     }
 
-    
+
 
     .tech-stack .stack h3 {
 
@@ -437,6 +456,12 @@ hr {
         margin-top: 24px;
 
     }
+
+    .marks {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
 
 }
 
@@ -481,6 +506,39 @@ hr {
 
         font-size: 12px;
         line-height: 15px;
+    }
+
+    .marks {
+        margin-top: 0;
+        margin-bottom: 0;
+
+    }
+
+}
+
+@media only screen and(max-width:850px) {
+    .bot-nav p span {
+
+        font-size: 12px;
+        line-height: 15px;
+
+    }
+
+    .bot-nav p {
+
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    header nav .nav ul li a {
+
+        font-size: 9px;
+        line-height: 12px;
+    }
+
+    .marks {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
 }
