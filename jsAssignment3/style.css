@@ -1,0 +1,63 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    background-color: white;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heading button {
+    background-color: rgb(16, 126, 153);
+    /* float:end; */
+
+}
+
+.dataTable {
+    overflow-x: auto;
+}
+
+/* .formDiv */
+/* { */
+/* border: 2px solid rgb(16, 126, 153); */
+/* } */
+.formHeading {
+    background-color: rgb(16, 126, 153);
+    color: white;
+}
+
+.formHeading {
+    font-size: 40px;
+    font-weight: 300px;
+}
+
+.formAddProduct label {
+    font-size: 25px;
+    font-weight: 200px;
+}
+
+.formAddProduct button {
+    background-color: rgb(16, 126, 153);
+
+}
+
+.formAddProduct input:focus {
+    border: 2px solid rgb(16, 126, 153);
+}
+
+.dataTable #dataBody btn {
+    background-color: rgb(16, 126, 153);
+    color: white;
+}
+
+small {
+    color: red;
+}
