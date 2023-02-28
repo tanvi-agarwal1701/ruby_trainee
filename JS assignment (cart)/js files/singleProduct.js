@@ -4,9 +4,9 @@ var loader = document.getElementById("loader");
 const keyValues = window.location.search;
 
 const urlParams = new URLSearchParams(keyValues);
-const param1 = urlParams.get('p_id');
+const param_productId = urlParams.get('p_id');
 
-fetch('https://dummyjson.com/products/' + param1)
+fetch('https://dummyjson.com/products/' + param_productId)
     .then(res => res.json())
     .then((data) => {
         

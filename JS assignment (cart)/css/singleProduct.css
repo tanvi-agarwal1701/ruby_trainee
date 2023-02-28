@@ -23,12 +23,11 @@ body {
   text-decoration: none;
   transition: all .4s ease;
 }
-
 #loader {
   background: #000 url(https://thumbs.gfycat.com/ZealousFineHochstettersfrog-size_restricted.gif) no-repeat center;
   height: 100vh;
   width: 100%;
-  background-size: 30%;
+  background-size: 15%;
   position: fixed;
   z-index: 100;
 }

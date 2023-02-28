@@ -65,7 +65,7 @@ else{
     let view = Cart.map(function (object) {
        
         cartString += `            <div class="box">
-    <img src="images.jpeg" alt="tanvi">
+    <img src="assests/images.jpeg" alt="image">
     
     <div class="content">
         <h3>${object.title}</h3>

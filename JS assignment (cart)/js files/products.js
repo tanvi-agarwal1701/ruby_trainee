@@ -32,22 +32,21 @@ window.addEventListener("load", () => {
             if (result.products.length > 0) {
                 loader.style.display = "none";
             }
-            result.products.map((value, index) => {
-                console.log("products", value);
+            result.products.map((product, index) => {
                 return products.innerHTML += `<div class="product">
-             <a> <img src="${value.thumbnail
-                    }" alt="" onclick=currentItem(${value.id}) class="product-img"></a>
+             <a> <img src="${product.thumbnail
+                    }" alt="" onclick=currentItem('${product.id}') class="product-img"></a>
               <div class="product-content">
-              <a> <h2 class="product-title" onclick=currentItem(${value.id})>${value.title.length > 18 ? value.title.substring(0, 80).concat("...more") : value.title
+              <a> <h2 class="product-title"onclick=currentItem('${product.id}')>${product.title.length > 18 ? product.title.substring(0, 80).concat("...more") : product.title
                     }</h2></a>
-              <h4 class="product-category">${value.category}</h4>
-              <p class="product-description">${value.description.length > 20
-                        ? value.description.substring(0, 80).concat("...more")
-                        : value.description
+              <h4 class="product-category">${product.category}</h4>
+              <p class="product-description">${product.description.length > 20
+                        ? product.description.substring(0, 80).concat("...more")
+                        : product.description
                     }</p>
               <div class="product-price-container">
-                  <h3 class="product-price">$${value.price}</h3>
-                 <a href="#!" data-productId="" onclick=addCart(${value.id}) class="add-to-cart" ><ion-icon name="cart-outline"></ion-icon></a></div>
+                  <h3 class="product-price">$${product.price}</h3>
+                 <a href="#!" data-productId="" onclick=addCart(${product.id}) class="add-to-cart" ><ion-icon name="cart-outline"></ion-icon></a></div>
               </div>
              </div>`
             })
@@ -61,16 +60,16 @@ const currentItem = (id) => {
 
     fetch(`https://dummyjson.com/products/${id}`)
         .then(res => res.json())
-        .then((newData) => {
-            let url = './singleProducts.html?p_id=' + newData.id
+        .then((singleProductData) => {
+            let url = './singleProducts.html?p_id=' + singleProductData.id
             window.location.assign(url);
         });
 
 }
-const addCart = (pid) => {
+const addCart = (product_id) => {
     let cart = localStorage.getItem("allProducts");
     let data = JSON.parse(cart);
-    const new_item = data.find(item => item.id === pid);
+    const new_item = data.find(item => item.id === product_id);
    
     if (localStorage.getItem("cartProducts") == null) {
         new_item.quantity = 1;
@@ -81,17 +80,13 @@ const addCart = (pid) => {
       
         let all_cart = localStorage.getItem("cartProducts");
         let allcart = JSON.parse(all_cart);
-        const new_item = allcart.find(item => item.id === pid);
+        const new_item = allcart.find(item => item.id === product_id);
        
         if (new_item === undefined) {
-            const new_data = data.find(item => item.id === pid);
+            const new_data = data.find(item => item.id === product_id);
             new_data.quantity = 1;
             allcart.push(new_data);
-
-
-
-
-            localStorage.setItem("cartProducts", JSON.stringify(allcart));
+             localStorage.setItem("cartProducts", JSON.stringify(allcart));
             badge();
 
         }
@@ -116,8 +111,8 @@ allCart.addEventListener("click", function (event) {
 
 })
 let profile=document.getElementById('profile');
-profile.addEventListener('click',myfun)
-function myfun(e)
+profile.addEventListener('click',profileUser)
+function profileUser(e)
 {
     e.preventDefault();
     window.location.assign('profile.html');
