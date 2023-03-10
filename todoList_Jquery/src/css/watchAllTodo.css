@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #ff0 50%, #333 50%);
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: 80%;
+    height: 760px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    overflow-y: auto;
+}
