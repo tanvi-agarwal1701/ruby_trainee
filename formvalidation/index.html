@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <style>
+        small {
+            color: red;
+        }
+
+        .modal small {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark p-3">
+            <div class="container-fluid">
+                <img src="logo1.png" alt="" />
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#" style="color: white">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#" style="color: white">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#" style="color: white">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#" style="color: white">Sermons</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
+                        <button>Submit</button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="temp">
+            <img src="template.jpeg" alt="" style="width: 100%" />
+        </div>
+    </div>
+    <div class="content m-5" style="display: flex; flex-direction: column; align-items: center">
+        <div>
+            <h1>Contact Form</h1>
+        </div>
+        <div id="formsub" style="width: 80%">
+            <form action="" id="formvalidate">
+                <div class="form-group mt-3">
+                    <label for="name">Name:</label>
+                    <input type="text" onkeydown="return /[a-z ]/i.test(event.key)" class="form-control" id="name"
+                        placeholder="Enter name" />
+                    <span><small id="error_name"></small></span>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="name">Email:</label>
+                    <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" />
+                    <span><small id="error_email"></small></span>
+                    <div class="form-group mt-3">
+                        <label for="name">Phone no:</label>
+                        <input type="number" class="form-control" id="phone_no" placeholder="Enter number"
+                            name="phoneno" />
+                        <span><small id="error_phone_no"></small></span>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="name">City:</label>
+                        <input type="text" onkeydown="return /[a-z ]/i.test(event.key)" class="form-control" id="city"
+                            placeholder="Enter cityname" name="city" />
+                        <span><small id="error_city"></small></span>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="query">Query</label>
+                        <textarea rows="6" class="form-control" id="query" placeholder="Enter Query"
+                            name="query"></textarea>
+                        <span><small id="error_query"></small></span>
+                    </div>
+                    <button type="submit" class="btn btn-dark my-5">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="infoModal" style="display:none;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Your Information is</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="cross">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p> NAME: <span><small id="modal_name"></small></span></p>
+                    <p> EMAIL: <span><small id="modal_email"></small></span></p>
+                    <p> PHONE NO: <span><small id="modal_phone_no"></small></span></p>
+                    <p> QUERY: <span><small id="modal_query"></small></span></p>
+                    <p> CITY: <span><small id="modal_city"></small></span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="close">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="formvalidate.js"></script>
+</body>
+
+</html>
